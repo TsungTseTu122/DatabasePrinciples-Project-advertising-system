@@ -36,22 +36,22 @@ The SQL server used for this project was hosted on a university-managed system, 
 
 ### Entity Relationship Diagram
 The Entity Relationship Diagram illustrates the structure of the advertising business database, including the relationships between clients, requests, projects, and staff.  
-<img src="diagrams/ERD_final edition.drawio.png" alt="ER Diagram" width="500">
+<img src="diagrams/ERD_final edition.drawio.png" alt="ER Diagram" width="750">
 
 ### Relational Schema
 The Relational Schema provides a detailed view of table structures, primary keys, and foreign key relationships.  
-![Relational Schema](diagrams/relationship%20schema-Page-2.drawio.png)
+<img src="diagrams/relationship%20schema-Page-2.drawio.png" alt="Relational Schema" width="750">
 
 ### Normalization
 The normalization process ensured that the database design adheres to BCNF principles.  
-![Normalization](diagrams/normalization.png)
+<img src="diagrams/normalization.png" alt="Normalization" width="750">
 
 ## SQL Queries Demonstrated
 
 ### Join Query
 Retrieves all requests corresponding to each client.  
 Results:
-- ![Before Join Query](query%20results/join1.png)
+- <img src="query%20results/join1.png" alt="join 1" width="750">
 - ![After Join Query](query%20results/join2.png)
 
 ### Update Query
