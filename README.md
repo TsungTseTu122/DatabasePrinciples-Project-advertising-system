@@ -51,19 +51,19 @@ The normalization process ensured that the database design adheres to BCNF princ
 ### Join Query
 Retrieves all requests corresponding to each client.  
 Results:
-- <img src="query%20results/join1.png" alt="join 1" width="750">
-- ![After Join Query](query%20results/join2.png)
+<img src="query%20results/join1.png" alt="join 1" width="750">
+![After Join Query](query%20results/join2.png)
 
 ### Update Query
 Updates the status of a project to reflect its completion.  
 Results:
-- ![Before Update](query%20results/update(before).png)
-- ![After Update](query%20results/update.png)  
+![Before Update](query%20results/update(before).png)
+![After Update](query%20results/update.png)  
 
 ### Aggregation Query
 Calculates the total payroll for each staff.  
 Results:
-- ![Aggregate Query](query%20results/aggregate.png)
+![Aggregate Query](query%20results/aggregate.png)
 
 ## Normalization and BCNF Compliance
 The database schema was normalized and checked for BCNF.
