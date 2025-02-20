@@ -11,9 +11,9 @@ The database system was designed by me using:
 
 ## Project Files
 
-**docs**
-- [docs/s4780187_project_part1.pdf](docs/s4780187_project_part1.pdf)
-- [docs/s4780187_project_part2.pdf](docs/s4780187_project_part2.pdf)
+**documents**
+- [documents/s4780187_project_part1.pdf](docs/s4780187_project_part1.pdf)
+- [documents/s4780187_project_part2.pdf](docs/s4780187_project_part2.pdf)
 
 **diagrams**
 - [diagrams/ERD_final_edition.drawio.png](diagrams/ERD_final_edition.drawio.png)
