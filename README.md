@@ -44,7 +44,7 @@ The Relational Schema provides a detailed view of table structures, primary keys
 
 ### Normalization
 The normalization process ensured that the database design adheres to BCNF principles.  
-<img src="diagrams/normalization.png" alt="Normalization" width="750">
+<img src="diagrams/normalization.png" alt="Normalization" width="650">
 
 ## SQL Queries Demonstrated
 
