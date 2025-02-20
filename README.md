@@ -36,7 +36,7 @@ The SQL server used for this project was hosted on a university-managed system, 
 
 ### Entity Relationship Diagram
 The Entity Relationship Diagram illustrates the structure of the advertising business database, including the relationships between clients, requests, projects, and staff.  
-![ER Diagram](diagrams/ERD_final%20edition.drawio.png)
+<img src="diagrams/ERD_final edition.drawio.png" alt="ER Diagram" width="500">
 
 ### Relational Schema
 The Relational Schema provides a detailed view of table structures, primary keys, and foreign key relationships.  
