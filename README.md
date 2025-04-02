@@ -50,12 +50,15 @@ The database schema was normalized and checked for BCNF.
 
 ## SQL Queries Demonstrated
 
-### Join Query
-Retrieves all requests corresponding to each client.  
-Results:
+### Join Query   
+Retrieves all requests corresponding to each client.
 
-<img src="query%20results/join1.png" alt="join 1" width="750">
-![After Join Query](query%20results/join2.png)
+**Before Join Query**  
+![Client](query%20results/join1.png)
+  
+![Request](query%20results/join2.png)
+
+**After Join Query**  
 
 ### Update Query
 Updates the status of a project to reflect its completion.  
