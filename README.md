@@ -10,35 +10,38 @@ Note: The original implementation was hosted on a university-managed server, whi
 .
 │   README.md
 │
-├── diagrams/
-│   ├── er_to_relational_mapping_reference_table.png
-│   ├── erd_final_edition.png
-│   ├── formal_relational_schema.png
-│   ├── functional_dependencies.png
-│   └── graphical_relational_schema.png
+├───diagrams
+│       erd_final edition.png
+│       er_to_relational_mapping_reference.png
+│       formal_relational_schema.png
+│       functional_dependencies.png
+│       graphical_relational_schema.png
 │
-└── query/
-    ├── aggregate/
-    │   ├── aggr_payroll_record.png
-    │   ├── aggr_project_deadline.png
-    │   ├── aggr_result_group_by.png
-    │   ├── aggr_result.png
-    │   ├── sql_aggr_group_by.png
-    │   └── sql_aggr.png
-    ├── division/
-    │   ├── division_payroll_record.png
-    │   ├── division_result.png
-    │   ├── division_staff.png
-    │   └── sql_division.png
-    ├── join/
-    │   ├── join_client.png
-    │   ├── join_request.png
-    │   ├── join_result.png
-    │   └── sql_join.png
-    └── update/
-        ├── project_after_update.png
-        ├── project_before_update.png
-        └── sql_update.png
+└───query
+    ├───aggregate
+    │       aggr_payroll_ record.png
+    │       aggr_project_ deadline.png
+    │       aggr_result.png
+    │       aggr_result_group_by.png
+    │       sql_aggr_group_by.png
+    │       sql_aggr_sum.png
+    │
+    ├───division
+    │       division_payroll_record.png
+    │       division_result.png
+    │       division_staff.png
+    │       sql_division.png
+    │
+    ├───join
+    │       join_client.png
+    │       join_request.png
+    │       join_result.png
+    │       sql_join.png
+    │
+    └───update
+            project_after_update.png
+            project_before_update.png
+            sql_update.png
 ```
 
 ## Functional Overview
