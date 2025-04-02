@@ -1,71 +1,119 @@
 # Database Principles Project - Advertising Business Submission System
 
 ## Project Overview
-This project presents the **relational database design** for an **Advertising Business Submission System**, allowing clients to submit their advertising demands and agencies to manage and track these requests.
+This project presents the **relational database design** for an **Advertising Business Submission System**, allowing clients to submit their advertising demands and agencies to manage and track these requests. The system was originally implemented using MySQL, with schema planning, normalization, and query testing performed via phpMyAdmin and XAMPP. 
 
-The database system was designed by me using:
-- **Entity-Relationship (ER) Diagram**
-- **Relational Schema**
-- **Normalization (BCNF)**
-- **Simple SQL Queries for Data Retrieval, Joins, Aggregation, and Updates**
+Note: The original implementation was hosted on a university-managed server, which is no longer accessible. A recreation of this project with a working database backend and web-based UI is currently in progress.
 
-## Project Files
+## File Structure
+```
+.
+│   README.md
+│
+├── diagrams/
+│   ├── er_to_relational_mapping_reference_table.png
+│   ├── erd_final_edition.png
+│   ├── formal_relational_schema.png
+│   ├── functional_dependencies.png
+│   └── graphical_relational_schema.png
+│
+└── query/
+    ├── aggregate/
+    │   ├── aggr_payroll_record.png
+    │   ├── aggr_project_deadline.png
+    │   ├── aggr_result_group_by.png
+    │   ├── aggr_result.png
+    │   ├── sql_aggr_group_by.png
+    │   └── sql_aggr.png
+    ├── division/
+    │   ├── division_payroll_record.png
+    │   ├── division_result.png
+    │   ├── division_staff.png
+    │   └── sql_division.png
+    ├── join/
+    │   ├── join_client.png
+    │   ├── join_request.png
+    │   ├── join_result.png
+    │   └── sql_join.png
+    └── update/
+        ├── project_after_update.png
+        ├── project_before_update.png
+        └── sql_update.png
+```
 
-**documents**
-- [documents/s4780187_project part1.pdf](documents/s4780187_project%20part1.pdf)
-- [documents/s4780187_project part2.pdf](documents/s4780187_project%20part2.pdf)
+## Functional Overview
 
-**diagrams**
-- [diagrams/ERD_final edition.drawio.png](diagrams/ERD_final%20edition.drawio.png)
-- [diagrams/relationship schema-Page-2.drawio.png](diagrams/relationship%20schema-Page-2.drawio.png)
+**Client-Side:**
 
-**query results**
-- [query results/aggregate.png](query%20results/aggregate.png)
-- [query results/join1.png](query%20results/join1.png)
-- [query results/join2.png](query%20results/join2.png)
-- [query results/update(before).png](query%20results/update(before).png)
-- [query results/update.png](query%20results/update.png)
+Clients can register and submit advertising requests.
+
+View status updates on their submissions.
+
+**Staff-Side:**
+
+Staff can log in with SSN, view requests, and create or update project status.
+
+Payroll and department details are associated.
+
+Software used in initial version: XAMPP + phpMyAdminLanguage used: SQL, and originally Python (planning stage)
 
 
-### Important Note  
-The SQL server used for this project was hosted on a university-managed system, which was shut down after the course ended. As a result, the original SQL code is no longer available. However, the project documentation, ER diagrams, relational schema, and query results have been preserved in this repository.
+In the new version, I plan to recreate the system using PostgreSQL + Docker, to explore modern deployment and database tools and step away from XAMPP/phpMyAdmin, which I’ve already worked with.
 
 
 ## Database Design
 
-### Entity Relationship Diagram
-The Entity Relationship Diagram illustrates the structure of the advertising business database, including the relationships between clients, requests, projects, and staff.  
-<img src="diagrams/ERD_final edition.drawio.png" alt="ER Diagram" width="750">
+### Entity Relationship Diagram (ERD)
 
-### Relational Schema
-The Relational Schema provides a detailed view of table structures, primary keys, and foreign key relationships.  
-<img src="diagrams/relationship%20schema-Page-2.drawio.png" alt="Relational Schema" width="750">
+![ERD](diagrams/ERD_final edition.png)
 
-### Normalization
-The database schema was normalized and checked for BCNF.
-- Functional dependencies were identified for each relation.
-- Each relation was analyzed to ensure that every functional dependency had a superkey.
-- I confirmed that no relations violated BCNF.
+### Relational Schema (Graphical + Text-Based)
+
+![Relational Schema](diagrams/Graphical Relational Schema.png)
+
+![Formal Schema](diagrams/Formal Relational Schema.png)
+
+### Functional Dependencies
+
+![FDs](diagrams/Functional Dependencies.png)
+
+### Relationship Cardinality & Mapping Reference
+
+![Mapping](diagrams/ER-to-Relational Mapping Reference Table.png)
 
 
-## SQL Queries Demonstrated
+## Query Demonstration
 
 ### Join Query   
 Retrieves all requests corresponding to each client.
 
-**Before Join Query**  
-![Client](query%20results/join1.png)
-  
-![Request](query%20results/join2.png)
+**Dataset Used:**
 
-**After Join Query**  
+![Client Table](query/join/join_client.png)  
+
+![Request Table](query/join/join_request.png)
+
+**SQL query:**
+
+![SQL join](query/join/SQL_join.png)
+
+**Result:**
+
+![Join Result](query/join/join_result.png)
 
 ### Update Query
 Updates the status of a project to reflect its completion.  
-Results:
+**Dataset Used:**
 
-![Before Update](query%20results/update(before).png)
-![After Update](query%20results/update.png)  
+![Before Update](query/update/project_before_update.png)
+
+**SQL query:**
+
+![SQL update](query/update/SQL_update.png)
+
+**Result:**
+
+![After Update](query/update/project_after_update.png
 
 ### Aggregation Query
 Calculates the total payroll for each staff.  
@@ -75,8 +123,23 @@ Results:
 
 
 ## Technologies Used
-- SQL and Relational Database Design
-- XAMPP and phpMyAdmin control
+- SQL: Query and data operations
+
+- phpMyAdmin: Admin panel to manage MySQL DB
+
+- XAMPP: Local development server for DB setup
+
+### Planned Technology Stack (for recreation):
+
+Database: PostgreSQL (containerized with Docker)
+
+Admin Panel: pgAdmin or DBeaver
+
+Frontend: Flask or Django (Python)
+
+Dev Environment: Docker Compose
+
+Legacy SQL Queries: The original queries were developed for MySQL and will be refactored for PostgreSQL during the rebuild. A new folder query_postgres/ will be used to track refactored queries.
 
 
 ## Future Improvements
