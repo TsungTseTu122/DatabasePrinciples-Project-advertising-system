@@ -17,7 +17,6 @@ The database system was designed by me using:
 
 **diagrams**
 - [diagrams/ERD_final edition.drawio.png](diagrams/ERD_final%20edition.drawio.png)
-- [diagrams/normalization.png](diagrams/normalization.png)
 - [diagrams/relationship schema-Page-2.drawio.png](diagrams/relationship%20schema-Page-2.drawio.png)
 
 **query results**
@@ -43,33 +42,34 @@ The Relational Schema provides a detailed view of table structures, primary keys
 <img src="diagrams/relationship%20schema-Page-2.drawio.png" alt="Relational Schema" width="750">
 
 ### Normalization
-The normalization process ensured that the database design adheres to BCNF principles.  
-<img src="diagrams/normalization.png" alt="Normalization" width="650">
+The database schema was normalized and checked for BCNF.
+- Functional dependencies were identified for each relation.
+- Each relation was analyzed to ensure that every functional dependency had a superkey.
+- I confirmed that no relations violated BCNF.
+
 
 ## SQL Queries Demonstrated
 
 ### Join Query
 Retrieves all requests corresponding to each client.  
 Results:
+
 <img src="query%20results/join1.png" alt="join 1" width="750">
 ![After Join Query](query%20results/join2.png)
 
 ### Update Query
 Updates the status of a project to reflect its completion.  
 Results:
+
 ![Before Update](query%20results/update(before).png)
 ![After Update](query%20results/update.png)  
 
 ### Aggregation Query
 Calculates the total payroll for each staff.  
 Results:
+
 ![Aggregate Query](query%20results/aggregate.png)
 
-## Normalization and BCNF Compliance
-The database schema was normalized and checked for BCNF.
-- Functional dependencies were identified for each relation.
-- Each relation was analyzed to ensure that every functional dependency had a superkey.
-- I confirmed that no relations violated BCNF.
 
 ## Technologies Used
 - SQL and Relational Database Design
