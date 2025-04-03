@@ -149,13 +149,13 @@ Calculates the total payroll for each staff or check the days before deadline.
 
 ### Planned Technology Stack (for recreation):
 
-Database: PostgreSQL (containerized with Docker)
+- Database: PostgreSQL (containerized with Docker)
 
-Admin Panel: pgAdmin or DBeaver
+- Admin Panel: pgAdmin or DBeaver
 
-Frontend: Flask or Django (Python)
+- Frontend: Flask or Django (Python)
 
-Dev Environment: Docker Compose
+- Dev Environment: Docker Compose
 
 Legacy SQL Queries: The original queries were developed for MySQL and will be refactored for PostgreSQL during the rebuild. A new folder query_postgres/ will be used to track refactored queries.
 
