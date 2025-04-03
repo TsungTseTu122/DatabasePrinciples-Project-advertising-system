@@ -3,7 +3,7 @@
 ## Project Overview
 This project presents the **relational database design** for an **Advertising Business Submission System**, allowing clients to submit their advertising demands and agencies to manage and track these requests. The system was originally implemented using MySQL, with schema planning, normalization, and query testing performed via phpMyAdmin and XAMPP. 
 
-Note: The original implementation was hosted on a university-managed server, which is no longer accessible. A recreation of this project with a working database backend and web-based UI is currently in progress.
+Note: The original implementation was hosted on a university-managed server, which is no longer accessible. A recreation of this project with a working database backend and web-based UI is currently in progress, and will be stored at `postgresql_rebuild/`.
 
 ## File Structure
 ```
@@ -157,7 +157,7 @@ Calculates the total payroll for each staff or check the days before deadline.
 
 - Dev Environment: Docker Compose
 
-Legacy SQL Queries: The original queries were developed for MySQL and will be refactored for PostgreSQL during the rebuild. A new folder query_postgres/ will be used to track refactored queries.
+Legacy SQL Queries: The original queries were developed for MySQL and will be refactored for PostgreSQL during the rebuild.
 
 
 ## Future Improvements
