@@ -163,5 +163,5 @@ Legacy SQL Queries: The original queries were developed for MySQL and will be re
 ## Future Improvements
 - Implement a user interface for better usability
 - Secure user data with hash functions
-- Expand with stored procedures and triggers
+- Expand with stored procedures and triggers\
 These will be implemented in the recreated system!!!
