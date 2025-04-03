@@ -11,16 +11,16 @@ Note: The original implementation was hosted on a university-managed server, whi
 │   README.md
 │
 ├───diagrams
-│       erd_final edition.png
-│       er_to_relational_mapping_reference.png
+│       erd_final_edition.png
+│       er_to_relational_mapping.png
 │       formal_relational_schema.png
 │       functional_dependencies.png
 │       graphical_relational_schema.png
 │
 └───query
     ├───aggregate
-    │       aggr_payroll_ record.png
-    │       aggr_project_ deadline.png
+    │       aggr_payroll_record.png
+    │       aggr_project_deadline.png
     │       aggr_result.png
     │       aggr_result_group_by.png
     │       sql_aggr_group_by.png
@@ -68,21 +68,21 @@ In the new version, I plan to recreate the system using PostgreSQL + Docker, to 
 
 ### Entity Relationship Diagram (ERD)
 
-![ERD](diagrams/ERD_final edition.png)
+![ERD](diagrams/erd_final_edition.png)
 
 ### Relational Schema (Graphical + Text-Based)
 
-![Relational Schema](diagrams/Graphical Relational Schema.png)
+![Relational Schema](diagrams/graphical_relational_schema.png)
 
-![Formal Schema](diagrams/Formal Relational Schema.png)
+![Formal Schema](diagrams/formal_relational_schema.png)
 
 ### Functional Dependencies
 
-![FDs](diagrams/Functional Dependencies.png)
+![FDs](diagrams/functional_dependencies.png)
 
 ### Relationship Cardinality & Mapping Reference
 
-![Mapping](diagrams/ER-to-Relational Mapping Reference Table.png)
+![Mapping](diagrams/er_to_relational_mapping.png)
 
 
 ## Query Demonstration
@@ -98,7 +98,7 @@ Retrieves all requests corresponding to each client.
 
 **SQL query:**
 
-![SQL join](query/join/SQL_join.png)
+![SQL join](query/join/sql_join.png)
 
 **Result:**
 
@@ -106,24 +106,39 @@ Retrieves all requests corresponding to each client.
 
 ### Update Query
 Updates the status of a project to reflect its completion.  
+
 **Dataset Used:**
 
 ![Before Update](query/update/project_before_update.png)
 
 **SQL query:**
 
-![SQL update](query/update/SQL_update.png)
+![SQL update](query/update/sql_update.png)
 
 **Result:**
 
-![After Update](query/update/project_after_update.png
+![After Update](query/update/project_after_update.png)
 
 ### Aggregation Query
-Calculates the total payroll for each staff.  
-Results:
+Calculates the total payroll for each staff or check the days before deadline.  
 
-![Aggregate Query](query%20results/aggregate.png)
+**Dataset used:**
 
+![aggr_payroll](query/aggregate/aggr_payroll_record.png)
+
+![aggr_project](query/aggregate/aggr_project_deadline.png)
+
+**SQL query:**
+
+![sql sum](query/aggregate/sql_aggr_sum.png)
+
+![sql group_by](query/aggregate/sql_aggr_group_by.png)
+
+**Results:**
+
+![sql_total_payroll](query/aggregate/aggr_result.png)
+
+![sql_deadline](query/aggregate/aggr_result_group_by.png)
 
 ## Technologies Used
 - SQL: Query and data operations
@@ -149,3 +164,4 @@ Legacy SQL Queries: The original queries were developed for MySQL and will be re
 - Implement a user interface for better usability
 - Secure user data with hash functions
 - Expand with stored procedures and triggers
+These will be implemented in the recreated system!!!
